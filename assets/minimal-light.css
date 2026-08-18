@@ -1,0 +1,25 @@
+body {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #222;
+  background-color: #fff;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+pre {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+code { font-family: monospace; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
