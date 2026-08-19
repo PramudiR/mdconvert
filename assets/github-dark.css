@@ -25,3 +25,66 @@ th, td {
   border: 1px solid #30363d;
   padding: 6px 13px;
 }
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #1f2328 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #000000 !important;
+    border-bottom-color: #d1d9e0 !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  a {
+    color: #0969da !important;
+    text-decoration: underline !important;
+  }
+
+  blockquote {
+    color: #59636e !important;
+    border-left-color: #d1d9e0 !important;
+  }
+
+  pre {
+    background-color: #f6f8fa !important;
+    border: 1px solid #d1d9e0 !important;
+    border-radius: 6px !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  code {
+    background-color: #f6f8fa !important;
+    color: #1f2328 !important;
+    border: 1px solid #d1d9e0 !important;
+  }
+
+  pre code {
+    border: none !important;
+    background: transparent !important;
+  }
+
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  th, td {
+    border: 1px solid #d1d9e0 !important;
+    color: #1f2328 !important;
+  }
+
+  th {
+    background-color: #f6f8fa !important;
+  }
+}

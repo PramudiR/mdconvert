@@ -15,3 +15,6 @@ target
 
 # Mac specific files
 .DS_Store
+
+# temporary files created by editors
+*.html
