@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish-artifacts:
+    name: Build ${{ matrix.target }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-musl
+            artifact_name: mdconvert
+            asset_name: mdconvert-linux-x86_64
+          - os: macOS-latest
+            target: aarch64-apple-darwin
+            artifact_name: mdconvert
+            asset_name: mdconvert-macos-arm64
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            artifact_name: mdconvert.exe
+            asset_name: mdconvert-windows-x86_64.exe
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          target: ${{ matrix.target }}
+      - run: cargo build --release --target ${{ matrix.target }}
+      - name: Upload Binaries to Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: target/${{ matrix.target }}/release/${{ matrix.artifact_name }}
