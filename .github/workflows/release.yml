@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - 'v*'
+permissions:
+  contents: write
 
 jobs:
   publish-artifacts:
@@ -32,6 +34,6 @@ jobs:
           target: ${{ matrix.target }}
       - run: cargo build --release --target ${{ matrix.target }}
       - name: Upload Binaries to Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           files: target/${{ matrix.target }}/release/${{ matrix.artifact_name }}
