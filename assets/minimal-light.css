@@ -23,3 +23,58 @@ th, td {
   border: 1px solid #ddd;
   padding: 8px;
 }
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #000000 !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  a {
+    color: #000000 !important;
+    text-decoration: underline !important;
+  }
+
+  blockquote {
+    color: #444444 !important;
+    border-left-color: #cccccc !important;
+  }
+
+  pre {
+    background-color: #f5f5f5 !important;
+    border: 1px solid #dddddd !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  code {
+    background-color: #f5f5f5 !important;
+    color: #000000 !important;
+  }
+
+  pre code {
+    background: transparent !important;
+  }
+
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  th, td {
+    border-color: #cccccc !important;
+  }
+}
