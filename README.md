@@ -45,4 +45,9 @@
 
 ## License
 
-- **Status**: No license file included. Add a `LICENSE` to clarify reuse terms.
+mdconvert  Copyright (C) 2026 PramudiR
+This program comes with ABSOLUTELY NO WARRANTY; for details refer to section w.
+This is free software, and you are welcome to redistribute it
+under certain conditions; for details refer section c.
+
+- For more detail refer to [LICENSE](https://github.com/PramudiR/mdconvert/blob/master/LICENSE)
