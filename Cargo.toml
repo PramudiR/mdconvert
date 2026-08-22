@@ -1,7 +1,16 @@
 [package]
 name = "mdconvert"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2024"
+authors = ["PramudiR"]
+description = "Sub-millisecond, zero-dependency Markdown to styled HTML CLI converter"
+documentation = "https://github.com/PramudiR/mdconvert"
+homepage = "https://github.com/PramudiR/mdconvert"
+repository = "https://github.com/PramudiR/mdconvert"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+keywords = ["markdown", "html", "cli", "converter", "themes"]
+categories = ["command-line-utilities", "text-processing"]
 
 [dependencies]
 clap = { version = "4.4", features = ["derive"] }
