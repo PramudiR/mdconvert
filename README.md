@@ -5,7 +5,7 @@
 ## Summary
 
 | Item | Details |
-|---|---|
+| --- | --- |
 | **Purpose** | A small, fast CLI to convert Markdown files to HTML with optional stylesheet support. |
 | **Language** | Rust |
 | **Where to look** | Source is in `main.rs` and configuration/dependencies in `Cargo.toml`. |
@@ -70,7 +70,7 @@ cargo run -- input.md --output output.html --theme dark
 ```
 
 ```sh
-cargo run -- inpput.md --output output.html
+cargo run -- input.md --output output.html
 ```
 
 ### Use short options
@@ -82,7 +82,7 @@ cargo run -- input.md -o output.html -t light
 ## Configuration & Files
 
 | Component | Location or details |
-|---|---|
+| --- | --- |
 | **Binary entry** | See `main.rs` for CLI flags and behavior. |
 | **Dependencies** | Defined in `Cargo.toml`. |
 | **Styles** | Default CSS themes live in `assets` (e.g., `github-dark.css`, `minimal-light.css`). |
@@ -90,7 +90,7 @@ cargo run -- input.md -o output.html -t light
 ## Development
 
 | Task | Command or instructions |
-|---|---|
+| --- | --- |
 | **Format** | `cargo fmt` |
 | **Build** | `cargo build` |
 | **Customize** | Add style themes into the `assets` folder, edit `main.rs`, then rebuild. |
