@@ -16,27 +16,28 @@
 ## Quick Start
 
 - **Build**: `cargo build --release`
-- **Run (dev)**: `cargo run -- <input.md> -o <output.html>`
-- **Run (release)**: `./target/release/mdconvert <input.md> -o <output.html>`
+- **Run (dev)**: `cargo run -- <input.md> --output <output.html>`
+- **Run (release)**: `../target/release/mdconvert <input.md> --output <output.html>`
 
 ## Usage (examples)
 
-- **Basic**: `cargo run -- README.md -o README.html`
-- **With stylesheet**: `cargo run -- input.md -o out.html --style assets/github-dark.css`
-- **From release binary**: `./target/release/mdconvert input.md -o out.html`
+- **Basic**: `cargo run -- README.md`
+- **To a specific html file**: `cargo run -- input.md --output output.html`
+- **With stylesheet light theme**: `cargo run -- input.md --output output.html --theme light`
+- **with stylesheet dark theme (default)**: `cargo run -- input.md --output output.html --theme dark` or `cargo run -- inpput.md --output output.html`
+- **with short options**: `cargo run -- input.md -o output.html -t light`
 
 ## Configuration & Files
 
 - **Binary entry**: See main.rs for CLI flags and behavior.
 - **Dependencies**: Defined in Cargo.toml.
-- **Styles**: Example CSS files live in assets (e.g., github-dark.css, minimal-light.css).
+- **Styles**: Default CSS themes live in assets (e.g., github-dark.css, minimal-light.css).
 
 ## Development
 
 - **Format**: `cargo fmt`
 - **Build**: `cargo build`
-- **Run tests** (if any): `cargo test`
-- **Iterate**: Edit main.rs, then rebuild.
+- **Customize**: Add style themes into assets folder, Edit main.rs, then rebuild.
 
 ## Contributing
 
