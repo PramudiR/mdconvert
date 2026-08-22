@@ -7,11 +7,17 @@ use std::path::PathBuf;
 // Compile time embedded CSS assets
 const THEME_GITHUB_DARK: &str = include_str!("../assets/github-dark.css");
 const THEME_MINIMAL_LIGHT: &str = include_str!("../assets/minimal-light.css");
+const THEME_NORD: &str = include_str!("../assets/nord.css");
+const THEME_SOLARIZED_LIGHT: &str = include_str!("../assets/solarized-light.css");
+const THEME_GRUVBOX_DARK: &str = include_str!("../assets/gruvbox-dark.css");
 
 #[derive(Copy, Clone, PartialEq, Eq, PartialOrd, Ord, ValueEnum, Debug)]
 enum Theme {
     Dark,
     Light,
+    Nord,
+    SolarizedLight,
+    Gruvbox,
 }
 
 #[derive(Parser, Debug)]
@@ -52,6 +58,9 @@ fn main() -> Result<()> {
     let css_theme = match args.theme {
         Theme::Dark => THEME_GITHUB_DARK,
         Theme::Light => THEME_MINIMAL_LIGHT,
+        Theme::Nord => THEME_NORD,
+        Theme::SolarizedLight => THEME_SOLARIZED_LIGHT,
+        Theme::Gruvbox => THEME_GRUVBOX_DARK,
     };
 
     // 5. Wrap body in a complete self-contained HTML document
