@@ -4,6 +4,7 @@
 
 [![Release](https://img.shields.io/github/v/release/PramudiR/mdconvert?style=flat-square&color=88c0d0)](https://github.com/PramudiR/mdconvert/releases)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0)
+[![Crates.io](https://img.shields.io/crates/v/mdconvert?style=flat-square&color=orange)](https://crates.io/crates/mdconvert)
 
 Convert your Markdown files into single-file, self-contained HTML documents in **under 5 milliseconds**. Features compile-time embedded CSS themes, high-contrast `@media print` rules for browser PDF export, and zero external runtime dependencies.
 
@@ -20,11 +21,17 @@ Convert your Markdown files into single-file, self-contained HTML documents in *
 
 ## 🚀 Installation
 
-### Option 1: Download Pre-Built Binary (Recommended)
+### Option 1: Via Cargo (Recommended for Rust users)
+
+```bash
+cargo install mdconvert
+```
+
+### Option 2: Download Pre-Built Binary (Recommended)
 
 Download the latest pre-compiled binary for macOS, Linux, or Windows from the **[Releases Page](https://github.com/PramudiR/mdconvert/releases)**.
 
-### Option 2: Build from Source
+### Option 3: Build from Source
 
 If you have the Rust toolchain installed:
 
