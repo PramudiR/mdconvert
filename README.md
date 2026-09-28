@@ -1,6 +1,6 @@
 # ⚡ mdconvert
 
-> **Sub-millisecond, zero-dependency Markdown to styled HTML CLI converter written in Rust.**
+> **Runs in under 5ms, zero-dependency Markdown to styled HTML CLI converter written in Rust.**
 
 [![Release](https://img.shields.io/github/v/release/PramudiR/mdconvert?style=flat-square&color=88c0d0)](https://github.com/PramudiR/mdconvert/releases)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0)
